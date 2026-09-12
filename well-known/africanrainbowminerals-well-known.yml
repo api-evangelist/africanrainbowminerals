@@ -1,0 +1,57 @@
+generated: '2026-09-12'
+method: probed
+source: live GET probes of the named /.well-known/* path list on every host African Rainbow Minerals is known to operate
+note: >-
+  Recorded absence. African Rainbow Minerals serves no /.well-known document on any host. The
+  corporate and investor site arm.co.za (WordPress) returns a HARD 404 with a zero-byte body for
+  every /.well-known path probed, and a random control path (/zz-api-evangelist-control) also
+  returns 404 — so the 404s are real, not an SPA catch-all. The secondary corporate host
+  www.arm-online.co.za answered a hard 404 with a 23,522-byte error page on every /.well-known
+  path during the first probe pass and then became unreachable (curl exit 28 / status 000) for
+  the remainder of the run; both results are recorded below rather than being smoothed over.
+  NO WellKnown and NO SecurityTxt pointer is emitted in apis.yml, because not one probe returned
+  a real document. This file documents an absence and must not be read as a presence.
+hit_count: 0
+hosts:
+- host: https://arm.co.za
+  soft_404_control:
+    path: /zz-api-evangelist-control
+    status: 404
+    verdict: >-
+      Hard-404 confirmed. A path that cannot exist returns 404 with an empty body, so a 200 on
+      this host would have been a real document. None of the probed paths returned 200.
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+- host: https://www.arm-online.co.za
+  note: >-
+    Secondary African Rainbow Minerals corporate host. Answered hard 404s (23,522-byte HTML error
+    page) on the first pass; subsequent requests returned curl status 000 (no response). Treated
+    as no document served.
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404

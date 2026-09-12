@@ -1,4 +1,4 @@
-# Africanrainbowminerals
+# African Rainbow Minerals
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,5 +64,15 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Africanrainbowminerals is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://equityzen.com/company/africanrainbowminerals
+African Rainbow Minerals Limited (ARM) is a niche, diversified South African mining and minerals
+company, founded by Dr Patrice Motsepe and created in its present form in May 2004. ARM is listed on
+the Johannesburg Stock Exchange (ARI) and headquartered in Sandton, Gauteng. It mines and
+beneficiates iron ore, manganese ore and alloys, chrome ore, platinum group metals, nickel and coal
+through ARM Ferrous, ARM Platinum and ARM Coal, plus a strategic gold investment in Harmony Gold.
+
+ARM sells physical mined commodity, not software. Contract discovery run on 2026-09-12 found no
+developer program, no public API, and no machine-readable API contract on any host it operates —
+see the `x-coverage` block in `apis.yml` for the probed URLs and the status each returned, and
+`well-known/africanrainbowminerals-well-known.yml` for the recorded `/.well-known/` absence.
+
+- https://arm.co.za/
