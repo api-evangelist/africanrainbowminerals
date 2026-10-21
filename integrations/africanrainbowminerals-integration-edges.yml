@@ -1,0 +1,41 @@
+edges:
+- partner_name: ICMM (International Council on Mining and Metals)
+  partner: null
+  partner_match: register
+  type: register
+  channel: standard-directory
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://www.icmm.com/en-gb/our-story/our-members/company-members/african-rainbow-minerals
+  category: mining industry council membership
+  contract_reference:
+    register: ICMM company members (icmm.com/our-members)
+    standard: ICMM Mining Principles (performance expectations)
+    spec_file: null
+    role: icmm-member
+    registered_name: African Rainbow Minerals
+    register_id: https://www.icmm.com/en-gb/our-story/our-members/company-members/african-rainbow-minerals
+    matched_domain: arm.co.za
+    matched_by: domain
+    signal_note: 'participation only: company membership commits to the ICMM Mining Principles; third-party assurance
+      of those commitments is not published as a register and is not read'
+    detected_by: sweep-energy-subsurface.py
+    detected: '2026-10-20'
+  detected_by: sweep-energy-subsurface.py
+  first_seen: '2026-10-20'
+generated: '2026-10-20'
+method: searched
+source:
+- https://reports.opengroup.org/osdu_forum.shtml
+- https://reports.opengroup.org/energistics.shtml
+- https://www.energistics.org/witsml-v1411-certified-products
+- https://www.energistics.org/witsml-v131-certified-products
+- https://pidx.org/current-members/
+- https://www.icmm.com/our-members
+checked:
+- https://pidx.org/current-members/
+- https://reports.opengroup.org/energistics.shtml
+- https://reports.opengroup.org/osdu_forum.shtml
+- https://www.energistics.org/witsml-v131-certified-products
+- https://www.energistics.org/witsml-v1411-certified-products
+- https://www.icmm.com/our-members
